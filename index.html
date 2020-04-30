@@ -1,0 +1,96 @@
+<!--
+Mitchell Douma 2019
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>MD Final Project: Duck Hunt</title>
+    <!--jQuery-->
+    <script src="js/lib/jquery-2.1.4.js"></script>
+    <!--jQuery mobile-->
+    <script src="js/lib/jquery.mobile-1.4.5.js"></script>
+    <!--jQuery mobile css-->
+    <link rel="stylesheet" type="text/css" href="css/lib/jquery.mobile-1.4.5.css">
+    <!--jQuery validation library-->
+    <script src="js/lib/jquery.validate.js"></script>
+
+<!-- favicon -->
+<link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+
+    <!--Javascript-->
+    <script src="js/mdglobal.js"></script>
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="css/mdmystyle.css">
+
+</head>
+
+<body>
+    <div data-role="page" id="homePage">
+        <div id="center">
+            <img src="images/logo.png" />
+        </div>
+        <div id="center">
+            <img class="ground" src="images/ground.png" />
+        </div>
+
+        <button type="button" id="mdPlayGame" name="mdPlayGame" class="ui-btn">Play Game</button>
+        <button type="button" id="mdControls" name="mdPlayGame" class="ui-btn">How To Play</button>
+        <button type="button" id="mdOptions" name="mdPlayGame" class="ui-btn">Options</button>
+        <button type="button" id="mdAbout" name="mdPlayGame" class="ui-btn">About</button>
+
+  
+   
+     
+    </div>
+    <div data-role="page" id="gamePage">
+            <div id="score" class="overCanvas">0</div>
+            <a id="back" href="#homePage" class="overCanvas">Back</a>
+
+        <canvas id="canvas"></canvas>
+        <script src="js/ground.js"></script>
+        <script src="js/redDuck.js"></script>
+        <script src="js/blueDuck.js"></script>
+        <script src="js/blackDuck.js"></script>
+        <div id="center" class="overCanvas">
+            <img class="ground" src="images/ground.png" />
+        </div>
+    </div>
+    <div data-role="page" id="controlPage">
+        <header>
+            <a href="#homePage" id="back">Back</a>
+        </header>
+        <h3 id="center">Tap the ducks to shoot them</h3>
+        <div id="center">
+            <img class="ground" src="images/ground.png" />
+        </div>
+    </div>
+    <div data-role="page" id="optionsPage">
+        <header>
+            <a href="#homePage" id="back">Back</a>
+        </header>
+        <br>
+        <label for="mdSound">Sound</label>
+        <input type="checkbox" id="mdSound" name="mdSound" checked>
+        <label for="mdMusic">Music</label>
+        <input type="checkbox" id="mdMusic" name="mdMusic" checked>
+        <div id="center">
+            <img class="ground" src="images/ground.png" />
+        </div>
+    </div>
+    <div data-role="page" id="aboutPage">
+        <header>
+            <a href="#homePage" id="back">Back</a>
+        </header>
+        <h3 id="center">Made by Mitchell Douma</h3>
+        <p id="center">Sound Effects by <a id="back" href="https://github.com/MattSurabian/DuckHunt-JS">MattSurabin</a></p>
+        <p id="center">Original Game and Sprites by <a id="back" href="https://www.mobygames.com/game/nes/duck-hunt/credits">Nintendo</a></p>        
+        <div id="center">
+            <img class="ground" src="images/ground.png" />
+        </div>
+    </div>
+</body>
+
+</html>
