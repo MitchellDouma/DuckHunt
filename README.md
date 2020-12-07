@@ -1,4 +1,5 @@
 # DuckHunt
-A remake of duck hunt for responsive websites using JavaScript
+A remake of duck hunt for responsive websites using JavaScript.
+![](images/Screenshots/DuckHuntGame.png)
 
-Click on the screen to shoot. Click on the moving ducks to shoot them.
+Click on the moving ducks to shoot them.
